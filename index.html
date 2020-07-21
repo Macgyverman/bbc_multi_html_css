@@ -1,0 +1,103 @@
+<!doctype html>
+<!-- 
+    This is a comment block in HTML. It will not be displayed by the browser. Note how the comment starts
+    like a tag <! and how it ends like a tag >. The -- can be read as "minus". I.E. you're subtracting this
+    part from the webpage.
+
+    Adding comments in HTML is rare, but leaving yourself comments can help you better understand your 
+    code when you read it later. 
+
+    You can delete this entire block and it will have no impact on the page. Give it a try!
+->
+<html>
+<head>
+  <!--
+    The META tag is used to send information about the page. It tells the user's browser various things about the
+    website. For example, it could indicate how the content is encoded in the computer's memory. In this case, in utf-8
+  -->
+  <meta charset="utf-8">
+  <!--
+    This tag sets the title of this page. The title is displayed in the browser's title bar or tab name.
+  -->
+  <title>CHANGE THIS TITLE!</title>  
+  <meta name="description" content="Something which describes this webpage. This is used by search engines.">
+  <!--
+    This line imports the CSS rules defined in styles.css
+  -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+  <div id="content-wrapper">
+    <!--
+      This is a new tag. Its function is purely to organize content. It has no impact on how content is displayed.
+      The header tag is used to create a logical separation for content which should be at the top of a page.
+
+      Often, the header tag will contain the navigational menu.
+    -->
+    <header>
+      <!--
+      This is a new tag. Its function is purely to organize content. It has no impact on how content is displayed.
+
+      The nav tag defines a block of links whose function is to navigate the current website. 
+      -->
+      <nav>
+        <ul>
+	      <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+    <!--
+      This is a new tag. Its function is purely to organize content. It has no impact on how content is displayed.
+      
+      The main tag is used to create a logical separation for content which should be the main focus of the page.
+    -->
+    <main>
+      <h1 class="title">Joe's Discount Apples</h1>
+      <h2 class="sub-title">Fresh from my trees to your mouth!</h2>
+      <div class="section dark-background">
+        <h2>Why?</h2>
+        <p>
+          Are you fed up with the high price of apples? So was I! I've started a business raising organic free range apples.
+          I take the savings and pass them on to you!
+        </p>
+      </div>          
+      <div class="section light-background">
+        <h2>Gallery</h2>
+        <p>Have a look at our fine product. Have you ever seen a nicer apple?<p>
+        <!-- 
+          picsum.photos is a service which generates fillter photos. They will be sent at random. 
+          You can use this service to get a feel for how your website will look, without needing to
+          worry about making photos accessible online.
+          
+          The number at the end of the URL (200 in this case) indicates the size of the image (200 x 200 pixels)
+          
+          The number following the ? (1 in this case), is a parameter sent to picsum.photos to tell it to send you
+          a different image that ?2. Note how the last two images have ?2 at the end, and are also identical to eachother.
+        -->
+        <img src="https://picsum.photos/200?1"/>
+        <img src="https://picsum.photos/200?2"/>
+        <img src="https://picsum.photos/200?2"/>
+      </div>
+    </main>
+    <!--
+      This is a new tag. Its function is purely to organize content. It has no impact on how content is displayed.
+      
+      The footer tag is used to create a logical separation for content which should be at the bottom of the page.
+    -->
+    <footer>
+      <div>
+        (c) 2020 Joe's Discount Apples
+      </div>
+    </footer>
+  </div> 
+</body>
+</html>
